@@ -1,0 +1,792 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_framelayout"
+        android:layout_width="870dp">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Hoist Solenoid Big F16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/TextView_F3_Show_id"
+                        android:textSize="24sp"
+                        android:textColor="#ffffff"
+                        android:layout_marginLeft="20dp" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="135dp"
+                        android:background="@drawable/p2_rectangle_background"
+                        android:layout_marginLeft="10dp">
+
+
+                        <CheckBox
+                            android:text="OFF STATE"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/checkBox_HS_F16_on"
+                            android:layout_alignParentStart="true"
+                            android:id="@+id/checkBox_HS_F16_off"
+                            android:layout_marginLeft="10dp" />
+
+                        <CheckBox
+                            android:text="ON STATE"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/checkBox_HS_F16_on"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_margin="10dp" />
+
+                        <TextView
+                            android:text="TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/p5_textView_result_f16"
+                            android:layout_toEndOf="@+id/p5_led_result_f16"
+                            android:layout_alignBottom="@+id/p5_led_result_f16"
+                            android:padding="5dp" />
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/reset_F16_p5_button"
+                            android:background="@drawable/reset_p2_button"
+                            android:layout_alignTop="@+id/check_F16_p5_button"
+                            android:layout_alignEnd="@+id/p5_textView_result_f16" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/grey_p1board"
+                            android:layout_marginStart="22dp"
+                            android:id="@+id/p5_led_result_f16"
+                            android:layout_above="@+id/checkBox_HS_F16_off"
+                            android:layout_toEndOf="@+id/check_F16_p5_button" />
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/check_F16_p5_button"
+                            android:background="@drawable/check_p2_button"
+                            android:layout_below="@+id/checkBox_HS_F16_off"
+                            android:layout_alignStart="@+id/checkBox_hoistupF3_Off" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Hoist Solenoid Small F17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/TextView_C14_Show_id"
+                        android:textSize="24sp"
+                        android:textColor="#ffffff"
+                        android:layout_marginLeft="20dp" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="135dp"
+                        android:background="@drawable/p2_rectangle_background"
+                        android:layout_marginLeft="27dp">
+
+
+                        <CheckBox
+                            android:text="ON STATE"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentStart="true"
+                            android:id="@+id/checkBox_HS_F17_on"
+                            android:layout_margin="10dp" />
+
+                        <CheckBox
+                            android:text="OFF STATE"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/checkBox_HS_F17_on"
+                            android:layout_alignParentStart="true"
+                            android:id="@+id/checkBox_HS_F17_off"
+                            android:layout_marginLeft="10dp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/grey_p1board"
+                            android:layout_above="@+id/checkBox_HS_F17_off"
+                            android:layout_toEndOf="@+id/checkBox_HS_F17_off"
+                            android:layout_marginStart="35dp"
+                            android:id="@+id/P5_led_result_F17" />
+
+                        <TextView
+                            android:text="TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/P5_textView_result_F17"
+                            android:padding="5dp"
+                            android:layout_alignBottom="@+id/P5_led_result_F17"
+                            android:layout_toEndOf="@+id/P5_led_result_F17" />
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/check_F17_p5_button"
+                            android:background="@drawable/check_p2_button"
+                            android:layout_below="@+id/checkBox_HS_F17_off"
+                            android:layout_alignStart="@+id/checkBox_HS_F17_off" />
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/reset_F17_p5_button"
+                            android:background="@drawable/reset_p2_button"
+                            android:layout_alignTop="@+id/check_F17_p5_button"
+                            android:layout_alignEnd="@+id/P5_textView_result_F17" />
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Shell Eject Solenoid C11 "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/TextView_E26_Show_id"
+                        android:textSize="24sp"
+                        android:textColor="#ffffff"
+                        android:layout_marginLeft="20dp" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="135dp"
+                        android:background="@drawable/p2_rectangle_background"
+                        android:layout_marginLeft="10dp">
+
+
+                        <CheckBox
+                            android:text="ON STATE"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentStart="true"
+                            android:id="@+id/checkBox_SE_C11_on"
+                            android:layout_margin="10dp" />
+
+                        <CheckBox
+                            android:text="OFF STATE"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/checkBox_SE_C11_on"
+                            android:layout_alignParentStart="true"
+                            android:id="@+id/checkBox_SE_C11_off"
+                            android:layout_marginLeft="10dp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/grey_p1board"
+                            android:layout_above="@+id/checkBox_SE_C11_off"
+                            android:layout_toEndOf="@+id/checkBox_SE_C11_off"
+                            android:layout_marginStart="35dp"
+                            android:id="@+id/led_result_SE_C11" />
+
+                        <TextView
+                            android:text="TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/P5_textView_result_C11"
+                            android:padding="5dp"
+                            android:layout_alignBottom="@+id/led_result_SE_C11"
+                            android:layout_toEndOf="@+id/led_result_SE_C11" />
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/check_C11_p5_button"
+                            android:background="@drawable/check_p2_button"
+                            android:layout_below="@+id/checkBox_SE_C11_off"
+                            android:layout_alignStart="@+id/checkBox_SE_C11_off" />
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/reset_gune26_p2_button"
+                            android:background="@drawable/reset_p2_button"
+                            android:layout_alignTop="@+id/check_C11_p5_button"
+                            android:layout_alignEnd="@+id/P5_textView_result_C11" />
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp">
+
+                    <TextView
+                        android:text="Carousal Mag Solenoid Big F28"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/TextView_F3slow_Show_id"
+                        android:textSize="24sp"
+                        android:textColor="#ffffff"
+                        android:layout_marginLeft="5dp" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="135dp"
+                        android:background="@drawable/p2_rectangle_background"
+                        android:layout_marginLeft="10dp">
+
+
+                        <CheckBox
+                            android:text="OFF STATE"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/checkBox_CM_F28_on"
+                            android:layout_alignParentStart="true"
+                            android:id="@+id/checkBox_CM_F28_off"
+                            android:layout_marginLeft="10dp" />
+
+                        <CheckBox
+                            android:text="ON STATE"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/checkBox_CM_F28_on"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_margin="10dp" />
+
+                        <TextView
+                            android:text="TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView_result_f28slow"
+                            android:layout_toEndOf="@+id/led_result_f28slow"
+                            android:layout_alignBottom="@+id/led_result_f28slow"
+                            android:padding="5dp" />
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/reset_F28_p5_button"
+                            android:background="@drawable/reset_p2_button"
+                            android:layout_alignTop="@+id/check_F28_p5_button"
+                            android:layout_alignEnd="@+id/textView_result_f28slow" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/grey_p1board"
+                            android:layout_marginStart="22dp"
+                            android:id="@+id/led_result_f28slow"
+                            android:layout_above="@+id/checkBox_CM_F28_off"
+                            android:layout_toEndOf="@+id/check_F28_p5_button" />
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/check_F28_p5_button"
+                            android:background="@drawable/check_p2_button"
+                            android:layout_below="@+id/checkBox_CM_F28_off"
+                            android:layout_alignStart="@+id/checkBox_CM_F28_off" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp">
+
+                    <TextView
+                        android:text="Carousal Mag Solenoid Small F29"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/TextView_C14_Show_id"
+                        android:textSize="24sp"
+                        android:textColor="#ffffff"
+                        android:layout_marginLeft="15dp" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="135dp"
+                        android:background="@drawable/p2_rectangle_background"
+                        android:layout_marginLeft="10dp">
+
+
+                        <CheckBox
+                            android:text="ON STATE"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentStart="true"
+                            android:id="@+id/checkBox_CM_F29_on"
+                            android:layout_margin="10dp" />
+
+                        <CheckBox
+                            android:text="OFF STATE"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/checkBox_CM_F29_on"
+                            android:layout_alignParentStart="true"
+                            android:id="@+id/checkBox_CM_F29_off"
+                            android:layout_marginLeft="10dp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/grey_p1board"
+                            android:layout_above="@+id/checkBox_CM_F29_off"
+                            android:layout_toEndOf="@+id/checkBox_CM_F29_off"
+                            android:layout_marginStart="35dp"
+                            android:id="@+id/P5_led_result_f29" />
+
+                        <TextView
+                            android:text="TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/P5_textView_result_f29"
+                            android:padding="5dp"
+                            android:layout_alignBottom="@+id/P5_led_result_f29"
+                            android:layout_toEndOf="@+id/P5_led_result_f29" />
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/check_F29_CM_p5_button"
+                            android:background="@drawable/check_p2_button"
+                            android:layout_below="@+id/checkBox_CM_F29_off"
+                            android:layout_alignStart="@+id/checkBox_CM_F29_off" />
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/reset_F29_CM_p5_button"
+                            android:background="@drawable/reset_p2_button"
+                            android:layout_alignTop="@+id/check_F29_CM_p5_button"
+                            android:layout_alignEnd="@+id/P5_textView_result_f29" />
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/test_p2_board"
+                    android:id="@+id/autotest_p5_button"
+                    android:layout_margin="10dp" />
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/reset_p2_board"
+                    android:layout_below="@+id/autotest_p5_button"
+                    android:id="@+id/reset_p5_board"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangle_automatic"
+                    android:layout_marginLeft="270dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_above="@+id/TestP1Reset_btn_id"
+                    >
+
+
+                    <TextView
+                        android:text="F16 Solenoid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="0"
+                        android:layout_marginTop="05dp"
+                        android:textSize="24sp"
+                        android:layout_marginLeft="25dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/grey_p1board"
+                        android:id="@+id/imageView_F16ON_Auto"
+                        android:layout_weight="0"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="5dp" />
+
+                    <TextView
+                        android:text="ON STATE"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="0"
+                        android:layout_marginTop="05dp"
+                        android:textSize="24sp"
+                        android:layout_marginLeft="25dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/grey_p1board"
+                        android:id="@+id/imageView_F16OFF_Auto"
+                        android:layout_weight="0"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="5dp" />
+
+                    <TextView
+                        android:text="OFF STATE"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView6"
+                        android:layout_weight="0"
+                        android:layout_marginTop="05dp"
+                        android:textSize="24sp"
+                        android:layout_marginLeft="25dp" />
+
+
+
+
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangle_automatic"
+                    android:layout_marginLeft="270dp"
+                    android:layout_marginTop="70dp"
+                    android:layout_above="@+id/TestP1Reset_btn_id"
+                    >
+
+
+                    <TextView
+                        android:text="F17 Solenoid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="0"
+                        android:layout_marginTop="05dp"
+                        android:textSize="24sp"
+                        android:layout_marginLeft="25dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/grey_p1board"
+                        android:id="@+id/imageView_F17ON_Auto"
+                        android:layout_weight="0"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="5dp" />
+
+                    <TextView
+                        android:text="ON STATE"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="0"
+                        android:layout_marginTop="05dp"
+                        android:textSize="24sp"
+                        android:layout_marginLeft="25dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/grey_p1board"
+                        android:id="@+id/imageView_F17OFF_Auto"
+                        android:layout_weight="0"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="5dp" />
+
+                    <TextView
+                        android:text="OFF STATE"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView6"
+                        android:layout_weight="0"
+                        android:layout_marginTop="05dp"
+                        android:textSize="24sp"
+                        android:layout_marginLeft="25dp" />
+
+
+
+
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangle_automatic"
+                    android:layout_marginLeft="270dp"
+                    android:layout_marginTop="120dp"
+                    android:layout_above="@+id/TestP1Reset_btn_id"
+                    >
+
+
+                    <TextView
+                        android:text="F28 Solenoid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="0"
+                        android:layout_marginTop="05dp"
+                        android:textSize="24sp"
+                        android:layout_marginLeft="25dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/grey_p1board"
+                        android:id="@+id/imageView_F28ON_Auto"
+                        android:layout_weight="0"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="5dp" />
+
+                    <TextView
+                        android:text="ON STATE"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="0"
+                        android:layout_marginTop="05dp"
+                        android:textSize="24sp"
+                        android:layout_marginLeft="25dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/grey_p1board"
+                        android:id="@+id/imageView_F28OFF_Auto"
+                        android:layout_weight="0"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="5dp" />
+
+                    <TextView
+                        android:text="OFF STATE"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView6"
+                        android:layout_weight="0"
+                        android:layout_marginTop="05dp"
+                        android:textSize="24sp"
+                        android:layout_marginLeft="25dp" />
+
+
+
+
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangle_automatic"
+                    android:layout_marginLeft="270dp"
+                    android:layout_marginTop="170dp"
+                    android:layout_above="@+id/TestP1Reset_btn_id"
+                    >
+
+
+                    <TextView
+                        android:text="F29 Solenoid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="0"
+                        android:layout_marginTop="05dp"
+                        android:textSize="24sp"
+                        android:layout_marginLeft="25dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/grey_p1board"
+                        android:id="@+id/imageView_F29ON_Auto"
+                        android:layout_weight="0"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="5dp" />
+
+                    <TextView
+                        android:text="ON STATE"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="0"
+                        android:layout_marginTop="05dp"
+                        android:textSize="24sp"
+                        android:layout_marginLeft="25dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/grey_p1board"
+                        android:id="@+id/imageView_F29OFF_Auto"
+                        android:layout_weight="0"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="5dp" />
+
+                    <TextView
+                        android:text="OFF STATE"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView6"
+                        android:layout_weight="0"
+                        android:layout_marginTop="05dp"
+                        android:textSize="24sp"
+                        android:layout_marginLeft="25dp" />
+
+
+
+
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangle_automatic"
+                    android:layout_marginLeft="270dp"
+                    android:layout_marginTop="220dp"
+                    android:layout_above="@+id/TestP1Reset_btn_id"
+                    >
+
+
+                    <TextView
+                        android:text="C11 Eject      "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="0"
+                        android:layout_marginTop="05dp"
+                        android:textSize="24sp"
+                        android:layout_marginLeft="25dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/grey_p1board"
+                        android:id="@+id/imageView_C11ON_Auto"
+                        android:layout_weight="0"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="5dp" />
+
+                    <TextView
+                        android:text="ON STATE"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="0"
+                        android:layout_marginTop="05dp"
+                        android:textSize="24sp"
+                        android:layout_marginLeft="25dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/grey_p1board"
+                        android:id="@+id/imageView_C11OFF_Auto"
+                        android:layout_weight="0"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="5dp" />
+
+                    <TextView
+                        android:text="OFF STATE"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView6"
+                        android:layout_weight="0"
+                        android:layout_marginTop="05dp"
+                        android:textSize="24sp"
+                        android:layout_marginLeft="25dp" />
+
+
+
+
+
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,1012 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    >
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:background="@color/colorAccent"
+        android:layout_width="870dp">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/testmodule_framelayout_id"
+            android:background="@drawable/background_framelayout"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="Hoist Up F3 (HM1)"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/TextView_F3_Show_id"
+                            android:textSize="24sp"
+                            android:textColor="#ffffff"
+                            android:layout_marginLeft="20dp" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/p2_rectangle_background"
+                            android:layout_marginLeft="10dp">
+
+
+                            <CheckBox
+                                android:text="OFF STATE"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/checkBox_hoistupF3_on"
+                                android:layout_alignParentStart="true"
+                                android:id="@+id/checkBox_hoistupF3_Off"
+                                android:layout_marginLeft="10dp" />
+
+                            <CheckBox
+                                android:text="ON STATE"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/checkBox_hoistupF3_on"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_margin="10dp" />
+
+                            <TextView
+                                android:text="TextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView_result_f3"
+                                android:layout_toEndOf="@+id/led_result_f3"
+                                android:layout_alignBottom="@+id/led_result_f3"
+                                android:layout_alignTop="@+id/led_result_f3"
+                                android:padding="5dp" />
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/reset_F3_p2_button"
+                                android:background="@drawable/reset_p2_button"
+                                android:layout_alignTop="@+id/check_F3_p2_button"
+                                android:layout_alignEnd="@+id/textView_result_f3" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/grey_p1board"
+                                android:layout_marginStart="22dp"
+                                android:id="@+id/led_result_f3"
+                                android:layout_above="@+id/checkBox_hoistupF3_Off"
+                                android:layout_toEndOf="@+id/check_F3_p2_button" />
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/check_F3_p2_button"
+                                android:background="@drawable/check_p2_button"
+                                android:layout_below="@+id/checkBox_hoistupF3_Off"
+                                android:layout_alignStart="@+id/checkBox_hoistupF3_Off" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="Hoist Down F4 (HM2)"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/TextView_C14_Show_id"
+                            android:textSize="24sp"
+                            android:textColor="#ffffff"
+                            android:layout_marginLeft="20dp" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/p2_rectangle_background"
+                            android:layout_marginLeft="27dp">
+
+
+                            <CheckBox
+                                android:text="ON STATE"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentStart="true"
+                                android:id="@+id/checkBox_carousalCCW_F32_On"
+                                android:layout_margin="10dp" />
+
+                            <CheckBox
+                                android:text="OFF STATE"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/checkBox_carousalCCW_F32_On"
+                                android:layout_alignParentStart="true"
+                                android:id="@+id/checkBox_carousalCCW_F32_Off"
+                                android:layout_marginLeft="10dp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/grey_p1board"
+                                android:layout_above="@+id/checkBox_carousalCCW_F32_Off"
+                                android:layout_toEndOf="@+id/checkBox_carousalCCW_F32_Off"
+                                android:layout_marginStart="35dp"
+                                android:id="@+id/P4_led_result_CM_CCW_f32" />
+
+                            <TextView
+                                android:text="TextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/P4_textView_result_CCW_f32"
+                                android:padding="5dp"
+                                android:layout_alignBottom="@+id/P4_led_result_CM_CCW_f32"
+                                android:layout_toEndOf="@+id/P4_led_result_CM_CCW_f32" />
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/check_F32_CCW_p4_button"
+                                android:background="@drawable/check_p2_button"
+                                android:layout_below="@+id/checkBox_carousalCCW_F32_Off"
+                                android:layout_alignStart="@+id/checkBox_carousalCCW_F32_Off" />
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/reset_F4_p2_button"
+                                android:background="@drawable/reset_p2_button"
+                                android:layout_alignTop="@+id/check_F32_CCW_p4_button"
+                                android:layout_alignEnd="@+id/P4_textView_result_CCW_f32" />
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="GUN LOCk E26"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/TextView_E26_Show_id"
+                            android:textSize="24sp"
+                            android:textColor="#ffffff"
+                            android:layout_marginLeft="20dp" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/p2_rectangle_background"
+                            android:layout_marginLeft="10dp">
+
+
+                            <CheckBox
+                                android:text="ON STATE"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentStart="true"
+                                android:id="@+id/checkBox_gununlock_e27_On"
+                                android:layout_margin="10dp" />
+
+                            <CheckBox
+                                android:text="OFF STATE"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/checkBox_gununlock_e27_On"
+                                android:layout_alignParentStart="true"
+                                android:id="@+id/checkBox_gununlock_e27_Off"
+                                android:layout_marginLeft="10dp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/grey_p1board"
+                                android:layout_above="@+id/checkBox_gununlock_e27_Off"
+                                android:layout_toEndOf="@+id/checkBox_gununlock_e27_Off"
+                                android:layout_marginStart="35dp"
+                                android:id="@+id/led_result_gununlocke27" />
+
+                            <TextView
+                                android:text="TextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/P4_textView_result_CCW_f32"
+                                android:padding="5dp"
+                                android:layout_alignBottom="@+id/led_result_gununlocke27"
+                                android:layout_toEndOf="@+id/led_result_gununlocke27" />
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/check_gununlocke27_p2_button"
+                                android:background="@drawable/check_p2_button"
+                                android:layout_below="@+id/checkBox_gununlock_e27_Off"
+                                android:layout_alignStart="@+id/checkBox_gununlock_e27_Off" />
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/reset_gune26_p2_button"
+                                android:background="@drawable/reset_p2_button"
+                                android:layout_alignTop="@+id/check_gununlocke27_p2_button"
+                                android:layout_alignEnd="@+id/P4_textView_result_CCW_f32" />
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="Hoist Down Slow F3(HM1)"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/TextView_F3slow_Show_id"
+                            android:textSize="24sp"
+                            android:textColor="#ffffff"
+                            android:layout_marginLeft="5dp" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/p2_rectangle_background"
+                            android:layout_marginLeft="10dp">
+
+
+                            <CheckBox
+                                android:text="OFF STATE"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/checkBox_hoistdownslow_f3_On"
+                                android:layout_alignParentStart="true"
+                                android:id="@+id/checkBox_hoistdownslow_f3_Off"
+                                android:layout_marginLeft="10dp" />
+
+                            <CheckBox
+                                android:text="ON STATE"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/checkBox_hoistdownslow_f3_On"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_margin="10dp" />
+
+                            <TextView
+                                android:text="TextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView_result_f3slow"
+                                android:layout_toEndOf="@+id/led_result_f3slow"
+                                android:layout_alignBottom="@+id/led_result_f3slow"
+                                android:layout_alignTop="@+id/led_result_f3slow"
+                                android:padding="5dp" />
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/reset_F3slow_p2_button"
+                                android:background="@drawable/reset_p2_button"
+                                android:layout_alignTop="@+id/check_F3slow_p2_button"
+                                android:layout_alignEnd="@+id/textView_result_f3slow" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/grey_p1board"
+                                android:layout_marginStart="22dp"
+                                android:id="@+id/led_result_f3slow"
+                                android:layout_above="@+id/checkBox_hoistdownslow_f3_Off"
+                                android:layout_toEndOf="@+id/check_F3slow_p2_button" />
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/check_F3slow_p2_button"
+                                android:background="@drawable/check_p2_button"
+                                android:layout_below="@+id/checkBox_hoistdownslow_f3_Off"
+                                android:layout_alignStart="@+id/checkBox_hoistdownslow_f3_Off" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="Hoist Up Slow F4(HM2)"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/TextView_C14_Show_id"
+                            android:textSize="24sp"
+                            android:textColor="#ffffff"
+                            android:layout_marginLeft="15dp" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/p2_rectangle_background"
+                            android:layout_marginLeft="10dp">
+
+
+                            <CheckBox
+                                android:text="ON STATE"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentStart="true"
+                                android:id="@+id/checkBox_carousalCCW_F32_On"
+                                android:layout_margin="10dp" />
+
+                            <CheckBox
+                                android:text="OFF STATE"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/checkBox_carousalCCW_F32_On"
+                                android:layout_alignParentStart="true"
+                                android:id="@+id/checkBox_carousalCCW_F32_Off"
+                                android:layout_marginLeft="10dp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/grey_p1board"
+                                android:layout_above="@+id/checkBox_carousalCCW_F32_Off"
+                                android:layout_toEndOf="@+id/checkBox_carousalCCW_F32_Off"
+                                android:layout_marginStart="35dp"
+                                android:id="@+id/P4_led_result_CM_CCW_f32" />
+
+                            <TextView
+                                android:text="TextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/P4_textView_result_CCW_f32"
+                                android:padding="5dp"
+                                android:layout_alignBottom="@+id/P4_led_result_CM_CCW_f32"
+                                android:layout_toEndOf="@+id/P4_led_result_CM_CCW_f32" />
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/check_F32_CCW_p4_button"
+                                android:background="@drawable/check_p2_button"
+                                android:layout_below="@+id/checkBox_carousalCCW_F32_Off"
+                                android:layout_alignStart="@+id/checkBox_carousalCCW_F32_Off" />
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/reset_F4slow_p2_button"
+                                android:background="@drawable/reset_p2_button"
+                                android:layout_alignTop="@+id/check_F32_CCW_p4_button"
+                                android:layout_alignEnd="@+id/P4_textView_result_CCW_f32" />
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="GUN Unlock E27"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/TextView_E26_Show_id"
+                            android:textSize="24sp"
+                            android:textColor="#ffffff"
+                            android:layout_marginLeft="20dp" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/p2_rectangle_background"
+                            android:layout_marginLeft="10dp">
+
+
+                            <CheckBox
+                                android:text="ON STATE"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentStart="true"
+                                android:id="@+id/checkBox_gununlock_e27_On"
+                                android:layout_margin="10dp" />
+
+                            <CheckBox
+                                android:text="OFF STATE"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/checkBox_gununlock_e27_On"
+                                android:layout_alignParentStart="true"
+                                android:id="@+id/checkBox_gununlock_e27_Off"
+                                android:layout_marginLeft="10dp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/grey_p1board"
+                                android:layout_above="@+id/checkBox_gununlock_e27_Off"
+                                android:layout_toEndOf="@+id/checkBox_gununlock_e27_Off"
+                                android:layout_marginStart="35dp"
+                                android:id="@+id/led_result_gununlocke27" />
+
+                            <TextView
+                                android:text="TextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/P4_textView_result_CCW_f32"
+                                android:padding="5dp"
+                                android:layout_alignBottom="@+id/led_result_gununlocke27"
+                                android:layout_toEndOf="@+id/led_result_gununlocke27" />
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/check_gununlocke27_p2_button"
+                                android:background="@drawable/check_p2_button"
+                                android:layout_below="@+id/checkBox_gununlock_e27_Off"
+                                android:layout_alignStart="@+id/checkBox_gununlock_e27_Off" />
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/reset_gununlocke27_p2_button"
+                                android:background="@drawable/reset_p2_button"
+                                android:layout_alignTop="@+id/check_gununlocke27_p2_button"
+                                android:layout_alignEnd="@+id/P4_textView_result_CCW_f32" />
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="Hoist F3 Up , F4 Up Slow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/TextView_F3slow_Show_id"
+                            android:textSize="24sp"
+                            android:textColor="#ffffff"
+                            android:layout_marginLeft="5dp" />
+
+                        <LinearLayout
+                            android:layout_width="400dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:background="@drawable/p2_rectangle_background_second"
+                            android:layout_marginLeft="10dp">
+
+
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/imageButton5"
+                                android:background="@drawable/check_p2_big_button"
+                                android:layout_margin="5dp" />
+
+
+                            <CheckBox
+                                android:text="ON STATE"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/checkBox7"
+                                android:layout_marginTop="20dp" />
+                            <CheckBox
+                                android:text="OFF STATE"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/checkBox7"
+                                android:layout_marginTop="20dp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/grey_p1board"
+
+                                android:layout_marginTop="20dp" />
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/reset_p2_big_button"
+                                android:layout_margin="5dp" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="Hoist F3 Down , F4 Down Slow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/TextView_F3slow_Show_id"
+                            android:textSize="24sp"
+                            android:textColor="#ffffff"
+                            android:layout_marginLeft="5dp" />
+
+                        <LinearLayout
+                            android:layout_width="402dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:background="@drawable/p2_rectangle_background_second"
+                            android:layout_marginLeft="10dp">
+
+
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/imageButton5"
+                                android:background="@drawable/check_p2_big_button"
+                                android:layout_margin="5dp" />
+
+
+                            <CheckBox
+                                android:text="ON STATE"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/checkBox7"
+                                android:layout_marginTop="20dp" />
+                            <CheckBox
+                                android:text="OFF STATE"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/checkBox7"
+                                android:layout_marginTop="20dp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/grey_p1board"
+
+                                android:layout_marginTop="20dp" />
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/reset_p2_big_button"
+                                android:layout_margin="5dp" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/test_p2_board"
+                        android:id="@+id/autotest_p4_button"
+                        android:layout_margin="10dp" />
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/reset_p2_board"
+                    android:layout_below="@+id/autotest_p4_button"
+                    android:id="@+id/reset_p2_board"
+                    android:layout_marginLeft="10dp" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/p2_rectangle_background_auto"
+                        android:layout_alignTop="@+id/autotest_p4_button"
+                        android:layout_toEndOf="@+id/autotest_p4_button"
+
+                        android:id="@+id/linearlayout_auto_one"
+                        android:layout_margin="5dp">
+
+                        <TextView
+                            android:text="Hoist Up"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:textColor="#ffffff"
+                            android:layout_marginTop="6dp"
+                            />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/grey_p1board"
+                             />
+
+                        <TextView
+                        android:text="ON STATE"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="#ffffff"
+                        android:layout_marginTop="6dp"
+                         />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/grey_p1board"
+                            />
+                        <TextView
+                            android:text="OFF STATE"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:textColor="#ffffff"
+                            android:layout_marginTop="6dp"
+                            />
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/linearlayout_auto_one"
+                        android:layout_toEndOf="@+id/linearlayout_auto_one"
+                        android:background="@drawable/p2_rectangle_background_auto"
+                        android:id="@+id/linearlayout_auto_two">
+
+                        <TextView
+                            android:text="Hoist Up"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:textColor="#ffffff"
+                            android:layout_marginTop="6dp"
+                            />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/grey_p1board"
+                            />
+
+                        <TextView
+                            android:text="ON STATE"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:textColor="#ffffff"
+                            android:layout_marginTop="6dp"
+                            />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/grey_p1board"
+                            />
+                        <TextView
+                            android:text="OFF STATE"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:textColor="#ffffff"
+                            android:layout_marginTop="6dp"
+                            />
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/p2_rectangle_background_auto"
+                        android:id="@+id/linearlayout_auto_three"
+                        android:layout_below="@+id/linearlayout_auto_one"
+                        android:layout_toEndOf="@+id/autotest_p4_button"
+                        android:layout_margin="5dp">
+
+
+                        <TextView
+                            android:text="Hoist Up"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:textColor="#ffffff"
+                            android:layout_marginTop="6dp"
+                            />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/grey_p1board"
+                            />
+
+                        <TextView
+                            android:text="ON STATE"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:textColor="#ffffff"
+                            android:layout_marginTop="6dp"
+                            />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/grey_p1board"
+                            />
+                        <TextView
+                            android:text="OFF STATE"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:textColor="#ffffff"
+                            android:layout_marginTop="6dp"
+                            />
+
+
+
+
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/p2_rectangle_background_auto"
+                        android:id="@+id/linearlayout_auto_five"
+                        android:layout_alignBottom="@+id/reset_p2_board"
+                        android:layout_toStartOf="@+id/linearlayout_auto_four"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp">
+
+                        <TextView
+                            android:text="Hoist Up"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:textColor="#ffffff"
+                            android:layout_marginTop="6dp"
+                            />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/grey_p1board"
+                            />
+
+                        <TextView
+                            android:text="ON STATE"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:textColor="#ffffff"
+                            android:layout_marginTop="6dp"
+                            />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/grey_p1board"
+                            />
+                        <TextView
+                            android:text="OFF STATE"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:textColor="#ffffff"
+                            android:layout_marginTop="6dp"
+                            />
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/p2_rectangle_background_auto"
+                        android:id="@+id/linearlayout_auto_six"
+                        android:layout_alignTop="@+id/linearlayout_auto_five"
+                        android:layout_toEndOf="@+id/linearlayout_auto_five"
+                        android:layout_alignBottom="@+id/linearlayout_auto_five">
+
+                        <TextView
+                            android:text="Hoist Up"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:textColor="#ffffff"
+                            android:layout_marginTop="6dp"
+                            />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/grey_p1board"
+                            />
+
+                        <TextView
+                            android:text="ON STATE"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:textColor="#ffffff"
+                            android:layout_marginTop="6dp"
+                            />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/grey_p1board"
+                            />
+                        <TextView
+                            android:text="OFF STATE"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:textColor="#ffffff"
+                            android:layout_marginTop="6dp"
+                            />
+
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/p2_rectangle_background_auto"
+                        android:id="@+id/linearlayout_auto_four"
+                        android:layout_below="@+id/linearlayout_auto_two"
+                        android:layout_toEndOf="@+id/linearlayout_auto_three"
+                        android:layout_marginTop="10dp">
+
+
+                        <TextView
+                            android:text="Hoist Up"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:textColor="#ffffff"
+                            android:layout_margin="6dp" />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/grey_p1board"
+                            />
+
+                        <TextView
+                            android:text="ON STATE"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:textColor="#ffffff"
+                            android:layout_marginTop="6dp"
+                            />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/grey_p1board"
+                            />
+                        <TextView
+                            android:text="OFF STATE"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:textColor="#ffffff"
+                            android:layout_marginTop="6dp"
+                            />
+
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_width="450dp">
+
+        <TextView
+            android:text="Log Data Showing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:textSize="36sp"
+            android:gravity="center" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/datalog_edittext_id"
+            android:hint="Data Will Display Here"
+            android:gravity="top|left"
+            android:background="#01b3a3" />
+    </LinearLayout>
+</LinearLayout>
+

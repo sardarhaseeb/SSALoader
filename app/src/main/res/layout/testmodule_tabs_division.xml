@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_width="870dp"
+        android:background="#EEEEEE">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#90AA86">
+
+            <Spinner
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:id="@+id/Testmodule_boards_spinner"
+                android:spinnerMode="dialog"
+                android:background="#9ABD97"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selection Mode"
+
+                android:textSize="24sp"
+                android:textColor="#ffff"
+                android:layout_marginLeft="10dp" />
+
+            <RadioButton
+                android:text="Manual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButton_manual"
+                android:layout_weight="0.03"
+                android:layout_marginLeft="50dp"
+                android:textSize="24sp"
+                android:textColor="#ffff" />
+
+            <RadioButton
+                android:text="Automatic"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButton_auto"
+                android:layout_weight="0.09"
+                android:layout_width="wrap_content"
+                android:textSize="24sp"
+                android:textColor="#ffff" />
+
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/testmodule_framelayout_id"
+            >
+
+            <include layout="@layout/p2board_manual_tabs_final"
+                android:id="@+id/p2board_manual_tabs_layout_id"
+                android:visibility="visible"
+                />
+
+
+
+
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:id="@+id/LogDataShowingLayout_id"
+        android:layout_width="450dp">
+
+        <TextView
+            android:text="Log Data Showing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:background="#17B890"
+            android:textSize="36sp"
+            android:gravity="center" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/datalog_edittext_id"
+            android:hint="Data Will Display Here"
+            android:gravity="top|left"
+            android:background="#9ABD97" />
+    </LinearLayout>
+
+</LinearLayout>

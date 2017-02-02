@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="870dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="870dp"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <ImageButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="@drawable/hoist_open"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/p2_manual_hoist_tab_btn" />
+        <ImageButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="@drawable/gun_close"
+            android:id="@+id/p2_manual_gun_tab_btn" />
+
+
+
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/p2_manual_hoist"
+            android:id="@+id/p2_manual_hoist_id"
+            android:visibility="visible"
+            />
+        <include layout="@layout/p2_manual_gun"
+            android:id="@+id/p2_manual_gun_id"
+            android:visibility="gone"
+            />
+
+
+    </FrameLayout>
+
+
+
+
+</LinearLayout>

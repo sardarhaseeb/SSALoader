@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="870dp"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="850dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/output_line_for_indiviudal_tasks"
+            android:layout_marginBottom="25dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:background="#CEBBC9"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Operational Modes"
+                    android:textSize="30sp"
+                    android:layout_marginLeft="15dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="#CEBBC9"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp">
+
+<LinearLayout
+    android:layout_width="350dp"
+    android:orientation="horizontal"
+    android:layout_height="match_parent">
+
+    <CheckBox
+        android:text="Lock (E26)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textSize="30sp"
+        android:layout_marginLeft="50dp"
+        android:id="@+id/p2_manual_gun_operational_locke26_checkbox"
+
+        android:textColorLink="?android:attr/colorPressedHighlight" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/grey_p1board"
+        android:padding="5dp"
+        android:layout_marginLeft="50dp"
+        android:id="@+id/p2_manual_gun_operational_e26lock_result_led" />
+
+</LinearLayout>
+
+
+
+
+                    <CheckBox
+                        android:text="Unlock (E27)"
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:textSize="30sp"
+                        android:padding="5dp"
+                        android:layout_marginLeft="50dp"
+                        android:id="@+id/p2_manual_gun_operational_unlocke27_checkbox" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/grey_p1board"
+
+                        android:padding="5dp"
+                        android:layout_marginLeft="55dp"
+                        android:id="@+id/p2_manual_gun_operational_e27unlock_result_led" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="850dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/output_line_for_indiviudal_tasks"
+            android:layout_marginTop="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="#CEBBC9"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="5dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Individual Outputs"
+                    android:textSize="30sp"
+                    android:id="@+id/textView2"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="#CEBBC9"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp">
+                    <CheckBox
+                        android:text="Lock (E26)"
+                        android:textSize="30sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:layout_marginLeft="30dp"
+                        android:id="@+id/p2_manual_gun_individual_locke26_checkbox" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/p2_manual_gun_individual_locke26_result_layout">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/grey_p1board"
+                            android:padding="10dp"
+                            android:id="@+id/p2_manual_hoist_individual_upf3fast_result_led"
+                            android:layout_marginLeft="20dp" />
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:id="@+id/p2_manual_gun_individual_LockE26_radioGroup"
+                            >
+
+
+                            <RadioButton
+                                android:text="ON State"
+                                android:textSize="30sp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:layout_marginLeft="50dp"
+                                android:id="@+id/p2_manual_gun_individual_locke26_radio_ON" />
+
+                            <RadioButton
+                                android:text="OFF State"
+                                android:layout_width="wrap_content"
+                                android:textSize="30sp"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:layout_marginLeft="50dp"
+                                android:id="@+id/p2_manual_gun_individual_locke26_radio_OFF" />
+
+                        </RadioGroup>
+
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:background="#CEBBC9"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="75dp">
+                    <CheckBox
+                        android:text="Unlock (E27)"
+                        android:layout_width="wrap_content"
+                        android:textSize="30sp"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:layout_marginLeft="30dp"
+                        android:id="@+id/p2_manual_gun_individual_unlocke27_checkbox" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/p2_manual_gun_individual_unlocke27_result_layout">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/grey_p1board"
+                            android:padding="10dp"
+                            android:id="@+id/p2_manual_hoist_individual_upf4slow_result_layout"
+                            android:layout_marginLeft="3dp" />
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:id="@+id/p2_manual_gun_individual_UnLockE27_radioGroup"
+                            >
+
+                        <RadioButton
+                            android:text="ON State"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:textSize="30sp"
+                            android:padding="10dp"
+                            android:layout_marginLeft="50dp"
+                            android:id="@+id/p2_manual_gun_individual_unlocke27_radio_ON" />
+
+                        <RadioButton
+                            android:text="OFF State"
+                            android:layout_width="wrap_content"
+                            android:textSize="30sp"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:layout_marginLeft="50dp"
+                            android:id="@+id/p2_manual_gun_individual_unlocke27_radio_OFF" />
+                       </RadioGroup>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/p2_manual_Gun_testsBTNs"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp">
+
+            <ImageButton
+                android:layout_height="65dp"
+                android:id="@+id/P2manualGunTestbtn_id"
+
+                android:background="@drawable/test_btn_both"
+                android:layout_width="180dp"
+                android:layout_marginLeft="135dp"
+                android:layout_marginTop="10dp" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/P2manualGunDebugbtn_id"
+                android:background="@drawable/debug_btn_both"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/P2manualGunResetbtn_id"
+                android:background="@drawable/reset_btn_both"
+                android:layout_margin="10dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+
+    >
+
+
+ <include layout="@layout/testmodule_tabs_division"
+     android:id="@+id/main_testmodule_tab_id"
+     android:visibility="visible"
+     />
+
+ <include layout="@layout/p2_dslr_pics_layout"
+     android:id="@+id/p2_dslr_pics_layout_id"
+     android:visibility="gone"
+     />
+
+</LinearLayout>
+

@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="603dp"
+        android:background="@drawable/background_framelayout"
+        android:layout_width="870dp">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:background="@drawable/p1_autotestbackground"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="75dp">
+
+            <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/p1_rectangle_auto"
+    android:layout_marginTop="75dp"
+                android:layout_marginLeft="50dp">
+
+
+                <TextView
+                    android:text="C13 Status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView_C13Status"
+                    android:layout_weight="0"
+                    android:layout_marginTop="05dp"
+                    android:textSize="24sp"
+                    android:layout_marginLeft="25dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/grey_p1board"
+                    android:id="@+id/imageView_C13ON_Auto"
+                    android:layout_weight="0"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp" />
+
+                <TextView
+                    android:text="ON STATE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="0"
+                    android:layout_marginTop="05dp"
+                    android:textSize="24sp"
+                    android:layout_marginLeft="25dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/grey_p1board"
+                    android:id="@+id/imageView_C13OFF_Auto"
+                    android:layout_weight="0"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp" />
+
+                <TextView
+                    android:text="OFF STATE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="0"
+                    android:layout_marginTop="05dp"
+                    android:textSize="24sp"
+                    android:layout_marginLeft="25dp" />
+
+
+
+</LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/p1_rectangle_auto"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="50dp">
+
+
+                <TextView
+                    android:text="C14 Status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView_C13Status"
+                    android:layout_weight="0"
+                    android:layout_marginTop="05dp"
+                    android:textSize="24sp"
+                    android:layout_marginLeft="25dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/grey_p1board"
+                    android:id="@+id/imageView_C13ON_Auto"
+                    android:layout_weight="0"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp" />
+
+                <TextView
+                    android:text="ON STATE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="0"
+                    android:layout_marginTop="05dp"
+                    android:textSize="24sp"
+                    android:layout_marginLeft="25dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/grey_p1board"
+                    android:id="@+id/imageView_C13OFF_Auto"
+                    android:layout_weight="0"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp" />
+
+                <TextView
+                    android:text="OFF STATE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="0"
+                    android:layout_marginTop="05dp"
+                    android:textSize="24sp"
+                    android:layout_marginLeft="25dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/p1_rectangle_auto"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="50dp">
+                <TextView
+                    android:text="F19 Status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView_C13Status"
+                    android:layout_weight="0"
+                    android:layout_marginTop="05dp"
+                    android:textSize="24sp"
+                    android:layout_marginLeft="25dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/grey_p1board"
+                    android:id="@+id/imageView_C13ON_Auto"
+                    android:layout_weight="0"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp" />
+
+                <TextView
+                    android:text="ON STATE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="0"
+                    android:layout_marginTop="05dp"
+                    android:textSize="24sp"
+                    android:layout_marginLeft="25dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/grey_p1board"
+                    android:id="@+id/imageView_C13OFF_Auto"
+                    android:layout_weight="0"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp" />
+
+                <TextView
+                    android:text="OFF STATE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="0"
+                    android:layout_marginTop="05dp"
+                    android:textSize="24sp"
+                    android:layout_marginLeft="25dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/p1_rectangle_auto"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="50dp">
+                <TextView
+                    android:text="F20 Status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView_C13Status"
+                    android:layout_weight="0"
+                    android:layout_marginTop="05dp"
+                    android:textSize="24sp"
+                    android:layout_marginLeft="25dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/grey_p1board"
+                    android:id="@+id/imageView_C13ON_Auto"
+                    android:layout_weight="0"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp" />
+
+                <TextView
+                    android:text="ON STATE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="0"
+                    android:layout_marginTop="05dp"
+                    android:textSize="24sp"
+                    android:layout_marginLeft="25dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/grey_p1board"
+                    android:id="@+id/imageView_C13OFF_Auto"
+                    android:layout_weight="0"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp" />
+
+                <TextView
+                    android:text="OFF STATE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="0"
+                    android:layout_marginTop="05dp"
+                    android:textSize="24sp"
+                    android:layout_marginLeft="25dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="50dp">
+
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton"
+                    android:layout_weight="1"
+                    android:background="@drawable/testp1pressed" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton3"
+                    android:layout_weight="1"
+                    android:background="@drawable/resetbuttonauto"
+                    android:layout_marginLeft="195dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

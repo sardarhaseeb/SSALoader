@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Solid State Auto Loader</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="TestModuleSpinnerValues">\"P1 Board\",\"P2 Board\"</string>
+    <string name="description_image_1">image for zooming</string>
+</resources>

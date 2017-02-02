@@ -1,0 +1,708 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="603dp"
+        android:background="@drawable/background_framelayout"
+        android:layout_width="870dp">
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="Frame Up C13 Test"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/TextView_C13_Show_id"
+                            android:textSize="24sp"
+                            android:textColor="#ffffff"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="0dp" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rectangle_layout"
+                            android:layout_marginLeft="10dp">
+
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/c13ON_btn_id"
+                                android:id="@+id/c13OFF_btn_id"
+                                android:background="@drawable/c13_off"
+                                android:layout_alignEnd="@+id/c13ON_btn_id" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/grey_p1board"
+                                android:layout_alignTop="@+id/c13ON_btn_id"
+                                android:layout_toEndOf="@+id/c13ON_btn_id"
+                                android:layout_marginStart="25dp"
+                                android:id="@+id/imageView_C13ON"
+                                android:layout_marginTop="5dp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/grey_p1board"
+                                android:layout_alignTop="@+id/c13OFF_btn_id"
+                                android:layout_alignStart="@+id/imageView_C13ON"
+                                android:id="@+id/imageView_C13OFF"
+                                android:layout_marginTop="5dp" />
+
+                            <TextView
+                                android:text="TextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toEndOf="@+id/imageView_C13ON"
+                                android:layout_alignTop="@+id/imageView_C13ON"
+                                android:id="@+id/TextView_C13ONRESULT"
+                                android:layout_marginTop="8dp" />
+
+                            <TextView
+                                android:text="TextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/TextView_C13OFFRESULT"
+                                android:layout_alignTop="@+id/imageView_C13OFF"
+                                android:layout_toEndOf="@+id/imageView_C13OFF"
+                                android:layout_marginTop="8dp" />
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toEndOf="@+id/TextView_C13ONRESULT"
+                                android:layout_marginStart="43dp"
+                                android:id="@+id/c13Reset_btn_id"
+                                android:background="@drawable/reset_button" />
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/c13ON_btn_id"
+                                android:background="@drawable/c13_on"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_alignTop="@+id/c13Reset_btn_id"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginTop="10dp"
+                                android:layout_margin="10dp" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="Frame Down C14 Test"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/TextView_C14_Show_id"
+                            android:textSize="24sp"
+                            android:textColor="#ffffff"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="0dp" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rectangle_layout"
+                            android:layout_marginLeft="10dp">
+
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/c14ON_btn_id"
+                                android:background="@drawable/c14_on"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_margin="10dp" />
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/c14OFF_btn_id"
+                                android:background="@drawable/c14_off"
+                                android:layout_below="@+id/c14ON_btn_id"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginLeft="10dp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/grey_p1board"
+                                android:id="@+id/imageView_C14ON"
+                                android:layout_alignTop="@+id/c14ON_btn_id"
+                                android:layout_toEndOf="@+id/c14ON_btn_id"
+                                android:layout_marginLeft="25dp"
+                                android:layout_marginTop="05dp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/grey_p1board"
+                                android:layout_alignTop="@+id/c14OFF_btn_id"
+                                android:layout_alignStart="@+id/imageView_C14ON"
+                                android:id="@+id/imageView_C14OFF"
+                                android:layout_marginTop="5dp" />
+
+                            <TextView
+                                android:text="TextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignTop="@+id/imageView_C14ON"
+                                android:layout_toEndOf="@+id/imageView_C14ON"
+                                android:id="@+id/TextView_F20ONRESULT"
+                                android:layout_marginTop="8dp" />
+
+                            <TextView
+                                android:text="TextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignTop="@+id/imageView_C14OFF"
+                                android:layout_alignEnd="@+id/TextView_F20ONRESULT"
+                                android:id="@+id/TextView_C14OFFRESULT"
+                                android:layout_marginTop="8dp" />
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/c14Reset_btn_id"
+                                android:background="@drawable/reset_button"
+                                android:layout_alignTop="@+id/c14ON_btn_id"
+                                android:layout_toEndOf="@+id/TextView_F20ONRESULT"
+                                android:layout_marginStart="33dp" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="Window OPEN F19 Test"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/TextView_F19_Show_id"
+                            android:textSize="24sp"
+                            android:textColor="#ffffff"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="0dp" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rectangle_layout"
+                            android:layout_marginLeft="10dp">
+
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentStart="true"
+                                android:id="@+id/F19ON_btn_id"
+                                android:background="@drawable/f19_on"
+                                android:layout_margin="10dp" />
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/F19ON_btn_id"
+                                android:layout_alignParentStart="true"
+                                android:id="@+id/F19OFF_btn_id"
+                                android:background="@drawable/f19_off"
+                                android:layout_marginLeft="10dp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/grey_p1board"
+                                android:id="@+id/imageView_F19ON"
+                                android:layout_alignTop="@+id/F19ON_btn_id"
+                                android:layout_toEndOf="@+id/F19ON_btn_id"
+                                android:layout_marginLeft="25dp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/grey_p1board"
+                                android:layout_below="@+id/F19ON_btn_id"
+                                android:layout_alignStart="@+id/imageView_F19ON"
+                                android:id="@+id/imageView_F19OFF" />
+
+                            <TextView
+                                android:text="TextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignTop="@+id/imageView_F19ON"
+                                android:layout_toEndOf="@+id/imageView_F19ON"
+                                android:id="@+id/TextView_F19ONRESULT"
+                                android:layout_marginTop="8dp" />
+
+                            <TextView
+                                android:text="TextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignTop="@+id/imageView_F19OFF"
+                                android:layout_toEndOf="@+id/imageView_F19OFF"
+                                android:id="@+id/TextView_F19OFFRESULT"
+                                android:layout_marginTop="8dp" />
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/F19Reset_btn_id"
+                                android:layout_marginStart="43dp"
+                                android:layout_alignParentTop="true"
+                                android:layout_toEndOf="@+id/TextView_F19ONRESULT"
+                                android:background="@drawable/reset_button"
+                                android:layout_marginTop="10dp" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="Window CLOSE F20 Test"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/TextView_F20_Show_id"
+                            android:textSize="24sp"
+                            android:textColor="#ffffff"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="0dp" />
+
+                        <RelativeLayout
+                            android:layout_width="412dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rectangle_layout"
+                            android:layout_marginLeft="10dp">
+
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentStart="true"
+                                android:id="@+id/F20ON_btn_id"
+                                android:background="@drawable/f20_on"
+                                android:layout_margin="10dp" />
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/F20OFF_btn_id"
+                                android:background="@drawable/f20_off"
+                                android:layout_below="@+id/F20ON_btn_id"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginLeft="10dp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/grey_p1board"
+                                android:layout_alignTop="@+id/F20ON_btn_id"
+                                android:layout_toEndOf="@+id/F20ON_btn_id"
+                                android:layout_marginStart="24dp"
+                                android:id="@+id/imageView_F20ON" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/grey_p1board"
+                                android:layout_below="@+id/F20ON_btn_id"
+                                android:layout_alignStart="@+id/imageView_F20ON"
+                                android:id="@+id/imageView_F20OFF" />
+
+                            <TextView
+                                android:text="TextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignTop="@+id/imageView_F20ON"
+                                android:layout_toEndOf="@+id/imageView_F20ON"
+                                android:layout_marginTop="8dp" />
+
+                            <TextView
+                                android:text="TextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignTop="@+id/imageView_F20OFF"
+                                android:layout_toEndOf="@+id/imageView_F20OFF"
+                                android:id="@+id/TextView_F20OFFRESULT"
+                                android:layout_marginTop="8dp" />
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/F20Reset_btn_id"
+                                android:background="@drawable/reset_button"
+                                android:layout_alignTop="@+id/imageView_F20ON"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="22dp" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_height="280dp">
+
+                        <TextView
+                            android:text="Automatic Test Board P1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView211"
+                            android:textSize="30sp"
+                            android:textColor="#ffffff"
+                            android:layout_marginLeft="15dp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:layout_marginLeft="10dp">
+
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/TestP1Reset_btn_id"
+                                android:background="@drawable/reset_p1_board"
+                                android:layout_below="@+id/TestP1_btn_id"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginTop="5dp" />
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+
+                                android:layout_marginLeft="245dp"
+                                android:background="@drawable/rectangle_automatic">
+
+                                <TextView
+                                    android:text="C13 Status"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/textView_C13Status"
+                                    android:layout_weight="0"
+                                    android:layout_marginTop="05dp"
+                                    android:textSize="24sp"
+                                    android:layout_marginLeft="25dp" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:srcCompat="@drawable/grey_p1board"
+                                    android:id="@+id/imageView_C13ON_Auto"
+                                    android:layout_weight="0"
+                                    android:layout_marginLeft="30dp"
+                                    android:layout_marginTop="5dp" />
+
+                                <TextView
+                                    android:text="ON STATE"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_weight="0"
+                                    android:layout_marginTop="05dp"
+                                    android:textSize="24sp"
+                                    android:layout_marginLeft="25dp" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:srcCompat="@drawable/grey_p1board"
+                                    android:id="@+id/imageView_C13OFF_Auto"
+                                    android:layout_weight="0"
+                                    android:layout_marginLeft="30dp"
+                                    android:layout_marginTop="5dp" />
+
+                                <TextView
+                                    android:text="OFF STATE"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_weight="0"
+                                    android:layout_marginTop="05dp"
+                                    android:textSize="24sp"
+                                    android:layout_marginLeft="25dp" />
+
+
+
+                            </LinearLayout>
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/TestP1_btn_id"
+                                android:background="@drawable/test_p1_board"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentStart="true" />
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:background="@drawable/rectangle_automatic"
+                                android:layout_marginLeft="245dp"
+                                android:layout_marginTop="160dp">
+
+                                <TextView
+                                    android:text="F20 Status"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_weight="0"
+                                    android:layout_marginTop="05dp"
+                                    android:textSize="24sp"
+                                    android:layout_marginLeft="25dp" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:srcCompat="@drawable/grey_p1board"
+                                    android:id="@+id/imageView_F20ON_Auto"
+                                    android:layout_weight="0"
+                                    android:layout_marginLeft="30dp"
+                                    android:layout_marginTop="5dp" />
+
+                                <TextView
+                                    android:text="ON STATE"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_weight="0"
+                                    android:layout_marginTop="05dp"
+                                    android:textSize="24sp"
+                                    android:layout_marginLeft="25dp" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:srcCompat="@drawable/grey_p1board"
+                                    android:id="@+id/imageView_F20OFF_Auto"
+                                    android:layout_weight="0"
+                                    android:layout_marginLeft="30dp"
+                                    android:layout_marginTop="5dp" />
+
+                                <TextView
+                                    android:text="OFF STATE"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_weight="0"
+                                    android:layout_marginTop="05dp"
+                                    android:textSize="24sp"
+                                    android:layout_marginLeft="25dp" />
+
+
+
+
+
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/rectangle_automatic"
+                                android:layout_marginLeft="245dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_alignTop="@+id/TestP1Reset_btn_id"
+                                >
+
+                                <TextView
+                                    android:text="F19 Status"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0"
+                                    android:layout_marginTop="05dp"
+                                    android:textSize="24sp"
+                                    android:layout_marginLeft="25dp" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:srcCompat="@drawable/grey_p1board"
+                                    android:id="@+id/imageView_F19ON_Auto"
+                                    android:layout_weight="0"
+                                    android:layout_marginLeft="30dp"
+                                    android:layout_marginTop="5dp" />
+
+                                <TextView
+                                    android:text="ON STATE"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0"
+                                    android:layout_marginTop="05dp"
+                                    android:textSize="24sp"
+                                    android:layout_marginLeft="25dp" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:srcCompat="@drawable/grey_p1board"
+                                    android:id="@+id/imageView_F19OFF_Auto"
+                                    android:layout_weight="0"
+                                    android:layout_marginLeft="30dp"
+                                    android:layout_marginTop="5dp" />
+
+                                <TextView
+                                    android:text="OFF STATE"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0"
+                                    android:layout_marginTop="05dp"
+                                    android:textSize="24sp"
+                                    android:layout_marginLeft="25dp" />
+
+
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/rectangle_automatic"
+                                android:layout_marginLeft="245dp"
+                                android:layout_above="@+id/TestP1Reset_btn_id"
+                                >
+
+
+                                <TextView
+                                    android:text="C14 Status"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_weight="0"
+                                    android:layout_marginTop="0dp"
+                                    android:textSize="24sp"
+                                    android:layout_marginLeft="25dp" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:srcCompat="@drawable/grey_p1board"
+                                    android:id="@+id/imageView_C14ON_Auto"
+                                    android:layout_weight="0"
+                                    android:layout_marginLeft="30dp"
+                                    android:layout_marginTop="5dp" />
+
+                                <TextView
+                                    android:text="ON STATE"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_weight="0"
+                                    android:layout_marginTop="05dp"
+                                    android:textSize="24sp"
+                                    android:layout_marginLeft="25dp" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:srcCompat="@drawable/grey_p1board"
+                                    android:id="@+id/imageView_C14OFF_Auto"
+                                    android:layout_weight="0"
+                                    android:layout_marginLeft="30dp"
+                                    android:layout_marginTop="5dp" />
+
+                                <TextView
+                                    android:text="OFF STATE"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/textView6"
+                                    android:layout_weight="0"
+                                    android:layout_marginTop="05dp"
+                                    android:textSize="24sp"
+                                    android:layout_marginLeft="25dp" />
+
+
+
+
+
+
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
